@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Artists in <%= @genre.name %> music:</h1>
+
+<ul>
+<% @genre.artists.each do |singer|  %>
+<li> <%= singer.name %> </li>
+
+<% end %>
+</ul>
+
+<%= link_to 'Edit', edit_genre_path(@genre) %> |
+<%= link_to 'Back', genres_path %>

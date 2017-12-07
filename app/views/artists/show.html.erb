@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @artist.name %></h1>
+
+<h3><%= @artist.genre.name %></h3>
+
+<ul>
+  <% @artist.songs.each do |track| %>
+  <li><h4> <%track.name %></h4></li>
+
+
+    <% end %>
+</ul>
+
+
+
+<%= link_to 'Edit', edit_artist_path(@artist), class: 'btn btn-default' %>
+<%= link_to 'Back', artists_path, class: 'btn btn-default' %>
