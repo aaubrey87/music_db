@@ -40,9 +40,13 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    annotate (2.7.2)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 13.0)
     arel (8.0.0)
     autoprefixer-rails (7.2.1)
       execjs
+    awesome_print (1.8.0)
     bindex (0.5.0)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
@@ -69,6 +73,8 @@ GEM
     crass (1.0.3)
     erubi (1.7.0)
     execjs (2.7.0)
+    faker (1.8.5)
+      i18n (~> 0.9.1)
     ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
@@ -186,10 +192,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
+  awesome_print
   bootstrap-sass
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  faker
   font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
